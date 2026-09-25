@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ae metall – الخدمات | واجهات • سيكوريت • كلادينج • شبابيك • أبواب • شاور • مطابخ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="خدمات ae metall المتكاملة: واجهات ألومنيوم، سيكوريت، كلادينج، شبابيك، أبواب منزلقة، كبائن شاور، مطابخ ألومنيوم، بيرجولا، درابزين، شيش وبليسيه.">
+  <link rel="canonical" href="https://www.aemetall.com/services.html">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .services-hero { background:linear-gradient(135deg,#0a0f1e 0%,#1a1a2e 50%,#0f3460 100%); padding:90px 0 70px; text-align:center; position:relative; overflow:hidden; }
+    .services-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 30% 60%,rgba(192,57,43,0.25) 0%,transparent 55%); }
+    .services-hero .container { position:relative; z-index:2; }
+    .services-hero-badge { display:inline-block; background:rgba(212,172,13,0.2); color:#d4ac0d; border:1px solid rgba(212,172,13,0.45); padding:6px 22px; border-radius:50px; font-size:0.82rem; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:18px; }
+    .services-hero h1 { font-size:clamp(2rem,4vw,3.2rem); font-weight:900; color:#fff; margin-bottom:16px; }
+    .services-hero p { color:rgba(255,255,255,0.72); font-size:clamp(0.95rem,1.6vw,1.1rem); max-width:600px; margin:0 auto; line-height:1.85; }
+
+    .section-head { text-align:center; margin-bottom:52px; }
+    .section-head .eyebrow { color:#c0392b; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; display:block; margin-bottom:10px; }
+    .section-head h2 { font-size:clamp(1.7rem,3vw,2.5rem); font-weight:900; color:#1a1a2e; margin-bottom:10px; }
+    .section-head p { color:#777; max-width:560px; margin:0 auto; font-size:0.97rem; }
+
+    /* Main Services */
+    .main-services { padding:90px 0; background:#fff; }
+    .svc-full-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+    .svc-full-card { background:#fff; border:1px solid #eee; border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06); transition:all 0.35s ease; }
+    .svc-full-card:hover { transform:translateY(-8px); box-shadow:0 18px 44px rgba(192,57,43,0.13); border-color:#c0392b; }
+    .svc-card-img { aspect-ratio:16/9; overflow:hidden; background:#f5f5f5; display:flex; align-items:center; justify-content:center; }
+    .svc-card-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
+    .svc-full-card:hover .svc-card-img img { transform:scale(1.06); }
+    .svc-card-img-placeholder { font-size:3.5rem; }
+    .svc-card-body { padding:24px 22px 26px; }
+    .svc-card-badge { display:inline-block; background:rgba(192,57,43,0.1); color:#c0392b; padding:3px 12px; border-radius:50px; font-size:0.72rem; font-weight:800; margin-bottom:10px; }
+    .svc-card-body h3 { font-size:1.1rem; font-weight:800; color:#1a1a2e; margin-bottom:10px; }
+    .svc-card-body p { color:#777; font-size:0.88rem; line-height:1.75; margin-bottom:16px; }
+    .svc-features { list-style:none; padding:0; margin:0 0 18px; display:flex; flex-direction:column; gap:6px; }
+    .svc-features li { display:flex; align-items:center; gap:8px; font-size:0.82rem; color:#555; }
+    .svc-features li::before { content:'✓'; color:#c0392b; font-weight:900; font-size:0.8rem; flex-shrink:0; }
+
+    /* Why Us */
+    .why-sec { padding:80px 0; background:#f9f7f5; }
+    .why-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .why-card { background:#fff; border:1px solid #eee; border-radius:16px; padding:26px 20px; text-align:center; transition:all 0.3s; }
+    .why-card:hover { transform:translateY(-5px); box-shadow:0 12px 30px rgba(192,57,43,0.12); border-color:#c0392b; }
+    .why-card-icon { font-size:2.2rem; margin-bottom:12px; }
+    .why-card h3 { font-size:0.97rem; font-weight:800; color:#1a1a2e; margin-bottom:8px; }
+    .why-card p { font-size:0.82rem; color:#888; line-height:1.7; }
+
+    /* Process */
+    .process-sec { padding:80px 0; background:#fff; }
+    .process-steps { display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative; }
+    .process-steps::before { content:''; position:absolute; top:36px; right:10%; left:10%; height:2px; background:linear-gradient(90deg,#c0392b,#d4ac0d); z-index:0; }
+    .process-step { text-align:center; position:relative; z-index:1; padding:0 8px; }
+    .step-num { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,#c0392b,#922b21); color:#fff; font-size:1.3rem; font-weight:900; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; box-shadow:0 6px 20px rgba(192,57,43,0.3); }
+    .process-step h3 { font-size:0.9rem; font-weight:800; color:#1a1a2e; margin-bottom:6px; }
+    .process-step p { font-size:0.78rem; color:#888; line-height:1.6; }
+
+    /* CTA */
+    .services-cta { padding:70px 0; background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%); text-align:center; position:relative; overflow:hidden; }
+    .services-cta::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%,rgba(192,57,43,0.35) 0%,transparent 60%); }
+    .services-cta .container { position:relative; z-index:1; }
+    .services-cta h2 { color:#fff; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:900; margin-bottom:12px; }
+    .services-cta p { color:rgba(255,255,255,0.7); margin-bottom:30px; }
+    .services-cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    @media(max-width:1024px){ .svc-full-grid{grid-template-columns:repeat(2,1fr);} .why-cards{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:860px){ .process-steps{grid-template-columns:repeat(1,1fr); gap:20px;} .process-steps::before{display:none;} .step-num{width:52px;height:52px;font-size:1rem;} }
+    @media(max-width:600px){ .svc-full-grid{grid-template-columns:1fr;} .why-cards{grid-template-columns:repeat(2,1fr);} }
+  </style>
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ae metall" width="46" height="46"><span>ae metall</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a class="active" href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">معرض الأعمال</a></li>
+          <li><a href="design2027.html" style="color:#d4ac0d;font-weight:800;">كتالوج 2027 ✦</a></li><li><a href="catalogue.html">الكتالوج الفني</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a class="lang-pill" href="services-en.html">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="main" class="services-hero">
+    <div class="container">
+      <div class="services-hero-badge">✦ 12 قطاع متخصص</div>
+      <h1>خدماتنا في الألومنيوم المعماري</h1>
+      <p>نقدم حلولاً متكاملة لجميع أنظمة الألومنيوم المعماري والزجاج للمشروعات السكنية والتجارية والصناعية.</p>
+    </div>
+  </section>
+
+  <!-- Main Services -->
+  <section class="main-services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">خدماتنا</span>
+        <h2>كل ما تحتاجه في الألومنيوم</h2>
+        <p>من الواجهات الضخمة حتى كبائن الشاور — جميعها تحت سقف واحد</p>
+      </div>
+      <div class="svc-full-grid">
+
+        <!-- 1 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/portfolio/aluminium-0001.jpg" alt="واجهات ألومنيوم وزجاج" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🏢 واجهات</span>
+            <h3>واجهات الألومنيوم والزجاج</h3>
+            <p>نُنفذ واجهات معمارية عصرية بقطاعات ألومنيوم 6063 وزجاج Low-E للمباني التجارية والسكنية والفنادق.</p>
+            <ul class="svc-features"><li>زجاج Low-E عازل للحرارة</li><li>إطارات ألومنيوم 6063-T5</li><li>تشطيب بودرة كوتينج أو أنودايز</li><li>مقاومة للعوامل الجوية</li></ul>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/portfolio/aluminium-0121.jpg" alt="وجهات سيكوريت" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🪟 سيكوريت</span>
+            <h3>وجهات السيكوريت</h3>
+            <p>زجاج سيكوريت مقوى حرارياً بسماكة 8-12 مم مثبت بإطارات ألومنيوم رفيعة أو بدون إطار (ستراكشر).</p>
+            <ul class="svc-features"><li>زجاج تمبر 8–12 مم</li><li>نظام ستراكشر بدون إطار</li><li>زجاج مزدوج عازل</li><li>متوفر مات وملون وشفاف</li></ul>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/portfolio/aluminium-0201.jpg" alt="كلادينج ألومنيوم" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🏗️ كلادينج</span>
+            <h3>كلادينج الألومنيوم (ACM)</h3>
+            <p>ألواح كلادينج ألومنيوم كومبوسيت بتشطيب PVDF مقاوم للأشعة فوق البنفسجية والعوامل الجوية بمئات الألوان.</p>
+            <ul class="svc-features"><li>تشطيب PVDF أو بودرة</li><li>سماكات 2–6 مم</li><li>ألوان وتصاميم لا محدودة</li><li>تركيب نظام قفص خفي</li></ul>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image20.png" alt="شبابيك ألومنيوم" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">⬜ شبابيك</span>
+            <h3>شبابيك الألومنيوم</h3>
+            <p>نوافذ ألومنيوم بعزل حراري وصوتي مزدوج بأنظمة Acasia 42 وAcasia 50 والأنظمة الأوروبية المختلفة.</p>
+            <ul class="svc-features"><li>نظام Acasia 42 و50</li><li>عزل حراري مزدوج 6+12+6</li><li>مفصلات بلاستيكية معزولة</li><li>زجاج Low-E اختياري</li></ul>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image24.png" alt="أبواب ألومنيوم" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🚪 أبواب</span>
+            <h3>أبواب الألومنيوم</h3>
+            <p>أبواب منزلقة وثابتة ومحورية وdouble wing بتصاميم فاخرة وأقفال متعددة النقاط لأعلى مستويات الأمان.</p>
+            <ul class="svc-features"><li>أقفال multipoint أمان عالي</li><li>نظام lift & slide</li><li>زجاج أمان مزدوج</li><li>تشطيب بودرة متعددة الألوان</li></ul>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image24.png" alt="أبواب منزلقة" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">↔️ منزلق</span>
+            <h3>الأبواب المنزلقة</h3>
+            <p>نظام أبواب منزلقة بمسارات علوية هادئة ومتينة، من نظام track التقليدي حتى lift & slide وbi-fold الحديث.</p>
+            <ul class="svc-features"><li>نظام lift & slide</li><li>نظام bi-fold طوي كامل</li><li>pocket door مخفي</li><li>تلسكوبي فتح ثلاثي</li></ul>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image32.png" alt="كبائن شاور" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🚿 شاور</span>
+            <h3>كبائن الشاور</h3>
+            <p>كبائن شاور بزجاج تمبر 8–10 مم وإطارات ألومنيوم بتشطيبات كروم وأسود مطفي وذهبي تناسب جميع أذواق الديكور.</p>
+            <ul class="svc-features"><li>زجاج تمبر 8–10 مم</li><li>frameless بدون إطار</li><li>كروم / أسود / ذهبي</li><li>walk-in / منزلق / راكد</li></ul>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image28.png" alt="مطابخ ألومنيوم" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">🍳 مطابخ</span>
+            <h3>مطابخ الألومنيوم</h3>
+            <p>مطابخ ألومنيوم عصرية مقاومة للرطوبة والحرارة والصدأ بتشطيبات لامعة ومطية بألوان لا محدودة.</p>
+            <ul class="svc-features"><li>مقاوم للرطوبة 100%</li><li>تشطيب لامع / مط / مرآة</li><li>خزائن علوية وسفلية</li><li>أبواب زجاجية اختيارية</li></ul>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-img"><img src="assets/images/image26.png" alt="بيرجولا وظلل" loading="lazy"></div>
+          <div class="svc-card-body">
+            <span class="svc-card-badge">⛱️ بيرجولا</span>
+            <h3>البيرجولا والظلل</h3>
+            <p>بيرجولا ألومنيوم bioclimatic بلوحات louvered دوارة تتحكم في التهوية والإضاءة، مع نظام صرف مياه مدمج.</p>
+            <ul class="svc-features"><li>louvered دوارة 0°–90°</li><li>opening roof انزلاقية</li><li>مقاومة للرياح والأمطار</li><li>إضاءة LED مدمجة اختيارية</li></ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More Services Row -->
+      <div style="margin-top:50px; display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-body" style="padding-top:22px;">
+            <span class="svc-card-badge">🔲 شيش</span>
+            <h3>شيش الحصيرة والبليسيه</h3>
+            <p>شيش حصيرة ألومنيوم وبليسيه بأنواعها (ثابت، منزلق، roller، تلسكوبي) لمنع الحشرات مع السماح بالتهوية.</p>
+          </div>
+        </div>
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-body" style="padding-top:22px;">
+            <span class="svc-card-badge">🔩 درابزين</span>
+            <h3>الدرابزين والحواجز</h3>
+            <p>درابزين ألومنيوم وسيكوريت للشرفات والدرج وحمامات السباحة بتصاميم عصرية وأمان عالي.</p>
+          </div>
+        </div>
+        <div class="svc-full-card scroll-reveal">
+          <div class="svc-card-body" style="padding-top:22px;">
+            <span class="svc-card-badge">⚙️ قطاعات</span>
+            <h3>القطاعات والإكسسوارات</h3>
+            <p>قطاعات ألومنيوم 6063-T5 وجميع الإكسسوارات: مفصلات، أقفال، مقابض، مانعات تسرب.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">لماذا نختارنا؟</span>
+        <h2>مزايا ae metall</h2>
+      </div>
+      <div class="why-cards">
+        <div class="why-card scroll-reveal"><div class="why-card-icon">🏆</div><h3>خبرة 18+ سنة</h3><p>منذ 2012 ننفذ المشاريع الصغيرة والكبرى بنفس الاحترافية والالتزام.</p></div>
+        <div class="why-card scroll-reveal"><div class="why-card-icon">📐</div><h3>قياسات دقيقة</h3><p>فريق مدرب على رفع المقاسات بدقة ميليمترية وتنفيذ الموديلات المطلوبة.</p></div>
+        <div class="why-card scroll-reveal"><div class="why-card-icon">🛡️</div><h3>ضمان شامل</h3><p>ضمان على جميع أعمال التركيب مع صيانة دورية ودعم فني مستمر.</p></div>
+        <div class="why-card scroll-reveal"><div class="why-card-icon">⚡</div><h3>تسليم في الوقت</h3><p>نلتزم بجداول التنفيذ المتفق عليها دون تأخير مع تواصل شفاف.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">كيف نعمل</span>
+        <h2>مراحل التنفيذ</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step scroll-reveal"><div class="step-num">1</div><h3>الاستشارة</h3><p>استشارة مجانية لفهم متطلبات مشروعك.</p></div>
+        <div class="process-step scroll-reveal"><div class="step-num">2</div><h3>رفع المقاسات</h3><p>زيارة الموقع ورفع المقاسات بدقة ميليمترية.</p></div>
+        <div class="process-step scroll-reveal"><div class="step-num">3</div><h3>عرض السعر</h3><p>تقديم عرض سعر تفصيلي وشفاف خلال 24 ساعة.</p></div>
+        <div class="process-step scroll-reveal"><div class="step-num">4</div><h3>التصنيع</h3><p>تصنيع بمواصفات دقيقة مع مراقبة الجودة.</p></div>
+        <div class="process-step scroll-reveal"><div class="step-num">5</div><h3>التركيب والتسليم</h3><p>تركيب احترافي وتسليم مع ضمان كامل.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta">
+    <div class="container">
+      <h2>جاهز لبدء مشروعك؟</h2>
+      <p>استشارة مجانية + عرض سعر تفصيلي خلال 24 ساعة</p>
+      <div class="services-cta-btns">
+        <a href="contact.html" class="btn btn-primary">اطلب عرض سعر مجاناً</a>
+        <a href="portfolio.html" class="btn btn-outline">شاهد أعمالنا (1014+ صورة)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand"><img src="assets/images/logo.png" alt="ae metall" width="40" height="40"><span>ae metall</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li>
+        <li><a href="portfolio.html">المعرض</a></li><li><a href="privacy.html">الخصوصية</a></li>
+      </ul>
+      <div class="footer-contact">
+        <a href="https://wa.me/+201001382022" class="contact-item"><img src="assets/images/whatsapp-icon.svg" alt="واتساب" class="contact-icon"><span class="contact-text">واتساب</span></a>
+        <a href="mailto:ahmedelkwaae@gmail.com" class="contact-item"><img src="assets/images/email-icon.svg" alt="البريد" class="contact-icon"><span class="contact-text">البريد</span></a>
+        <a href="https://www.facebook.com/aeMETALL.eg" target="_blank" rel="noopener" class="contact-item"><img src="assets/images/facebook-icon.svg" alt="فيسبوك" class="contact-icon"><span class="contact-text">فيسبوك</span></a>
+      </div>
+      <p class="copy">© 2025 ae metall. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <button class="floating-cta whatsapp" data-phone="+201001382022" data-message="مرحباً، أود الاستفسار عن خدماتكم" aria-label="واتساب"></button>
+  <script src="assets/script.js"></script>
+</body>
+</html>

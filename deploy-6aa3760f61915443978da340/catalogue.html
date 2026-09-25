@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ae metall - كتالوج الأنظمة والقطاعات الألومنيوم 2027</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="كتالوج الأنظمة والقطاعات الألومنيوم المعماري 2027 مع صفحات الداتا شيت وفهرس القطاعات.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    body { font-family: var(--font-ar); }
+    .catalogue-hero { background:linear-gradient(135deg,#07091a,#1a1a2e 45%,#0f3460); padding:78px 0 58px; color:#fff; text-align:center; position:relative; overflow:hidden; }
+    .catalogue-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 20% 55%,rgba(192,57,43,.3),transparent 55%),radial-gradient(ellipse at 80% 20%,rgba(212,172,13,.2),transparent 50%); }
+    .catalogue-hero .container { position:relative; z-index:1; }
+    .catalogue-hero h1 { font-size:clamp(2rem,4.5vw,3.4rem); margin:14px 0; line-height:1.2; }
+    .catalogue-hero p { max-width:700px; margin:0 auto 28px; color:rgba(255,255,255,.76); line-height:1.9; }
+    .catalogue-badge { display:inline-block; color:#d4ac0d; border:1px solid rgba(212,172,13,.5); background:rgba(212,172,13,.14); border-radius:999px; padding:6px 18px; font-weight:800; letter-spacing:1px; }
+    .catalogue-actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .catalogue-controls { padding:28px 0; background:#fff; border-bottom:1px solid #eee; position:sticky; top:70px; z-index:10; box-shadow:0 4px 18px rgba(0,0,0,.06); }
+    .catalogue-control-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    .catalogue-search { flex:1; min-width:240px; padding:13px 18px; border:2px solid #e9ecef; border-radius:999px; font:inherit; outline:none; background:#fafafa; }
+    .catalogue-search:focus { border-color:var(--red); background:#fff; box-shadow:0 0 0 4px rgba(192,57,43,.1); }
+    .catalogue-count { color:#777; font-weight:700; white-space:nowrap; }
+    .catalogue-section { padding:62px 0 90px; background:linear-gradient(180deg,#f9f7f5,#fff); }
+    .catalogue-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .system-card { background:#fff; border:1px solid #eee; border-radius:16px; padding:24px; box-shadow:0 3px 14px rgba(0,0,0,.06); transition:.3s; }
+    .system-card:hover { transform:translateY(-5px); border-color:var(--red); box-shadow:0 14px 30px rgba(192,57,43,.13); }
+    .system-card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:14px; }
+    .system-card h2 { font-size:1.2rem; color:var(--dark); }
+    .system-number { color:var(--red); font-weight:900; font-size:.8rem; }
+    .system-category { display:inline-block; color:var(--red); background:rgba(192,57,43,.09); border-radius:999px; padding:4px 10px; font-size:.75rem; font-weight:800; margin-bottom:12px; }
+    .system-card p { color:#777; font-size:.9rem; line-height:1.75; min-height:52px; }
+    .system-meta { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:18px 0; }
+    .system-meta div { background:#faf7f5; border-radius:9px; padding:9px; font-size:.78rem; color:#777; }
+    .system-meta strong { display:block; color:var(--dark); font-size:.86rem; }
+    .system-actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .system-actions .btn { padding:9px 14px; font-size:.78rem; }
+    .polyfilm-note { margin:0 auto 28px; max-width:900px; padding:16px 20px; background:rgba(212,172,13,.12); border:1px solid rgba(212,172,13,.35); border-radius:12px; color:#6d5700; line-height:1.7; }
+    .profile-index { margin-top:70px; padding-top:42px; border-top:1px solid #eee; text-align:center; }
+    .profile-index h2 { color:var(--dark); margin-bottom:10px; }
+    .profile-index p { color:#777; margin-bottom:20px; }
+    .catalogue-empty { display:none; text-align:center; padding:60px; color:#888; }
+    @media(max-width:900px){ .catalogue-grid{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:600px){ .catalogue-grid{grid-template-columns:1fr;} .catalogue-controls{position:static;} .system-card p{min-height:0;} }
+  </style>
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#catalogueGrid">تخطي إلى الكتالوج</a>
+  <header class="site-header" role="banner"><div class="container header-content"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ae metall" width="46" height="46"><span>ae metall</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">☰</button><nav id="main-nav" class="main-nav" role="navigation" aria-label="التنقل الرئيسي"><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="services.html">الخدمات</a></li><li><a href="portfolio.html">معرض الأعمال</a></li><li><a href="design2027.html">كتالوج 2027 ✦</a></li><li><a class="active" href="catalogue.html">الكتالوج الفني</a></li><li><a href="contact.html">تواصل معنا</a></li><li><a class="lang-pill" href="catalogue-en.html">English</a></li></ul></nav></div></header>
+  <section class="catalogue-hero"><div class="container"><span class="catalogue-badge">✦ CATALOGUE 2027</span><h1>كتالوج الأنظمة والقطاعات الألومنيوم</h1><p>استعرض الأنظمة المعمارية، صفحات الداتا شيت، أرقام صفحات القطاعات، وفهرس القطاعات الكامل من الكتالوج الأصلي.</p><div class="catalogue-actions"><a class="btn btn-primary" href="GCatalogue_2027.pdf" target="_blank">فتح الكتالوج PDF</a><a class="btn btn-outline" href="#profiles">فهرس القطاعات</a></div></div></section>
+  <section class="catalogue-controls"><div class="container"><div class="catalogue-control-row"><input id="catalogueSearch" class="catalogue-search" type="search" placeholder="ابحث باسم النظام أو الفئة أو الوصف..." aria-label="البحث في الكتالوج"><span id="catalogueCount" class="catalogue-count"></span></div></div></section>
+  <main class="catalogue-section"><div class="container"><div class="polyfilm-note"><strong>ملاحظة حول Polyfilm:</strong> لم يتم العثور على قسم أو صفحات باسم Polyfilm داخل ملف `GCatalogue_2027.pdf` الحالي. لذلك تم ربط كل نظام بصفحات الداتا شيت الفعلية دون اختلاق مواصفات غير موجودة. عند توفير ملف Polyfilm منفصل يمكن ربطه بكل بطاقة مباشرة.</div><div id="catalogueGrid" class="catalogue-grid"></div><div id="catalogueEmpty" class="catalogue-empty">لا توجد نتائج مطابقة.</div><section id="profiles" class="profile-index"><h2>فهرس القطاعات الكامل</h2><p>الفهرس التفصيلي للقطاعات موجود داخل صفحات 10 إلى 31 من الكتالوج الأصلي.</p><a class="btn btn-secondary" href="GCatalogue_2027.pdf#page=11" target="_blank">فتح فهرس القطاعات في PDF</a></section></div></main>
+  <footer class="site-footer"><div class="container footer-content"><div class="footer-brand"><img src="assets/images/logo.png" alt="ae metall" width="40" height="40"><span>ae metall</span></div><ul class="footer-links"><li><a href="index.html">الرئيسية</a></li><li><a href="services.html">الخدمات</a></li><li><a href="portfolio.html">المعرض</a></li><li><a href="catalogue-en.html">English</a></li></ul><p class="copy">© 2026 ae metall. جميع الحقوق محفوظة.</p></div></footer>
+  <script src="assets/script.js"></script><script src="assets/catalogue-data.js"></script><script>
+    const grid=document.getElementById('catalogueGrid'), search=document.getElementById('catalogueSearch'), count=document.getElementById('catalogueCount'), empty=document.getElementById('catalogueEmpty');
+    function render(){const q=search.value.trim().toLowerCase();const data=CATALOGUE_SYSTEMS.filter(x=>[x.nameAr,x.categoryAr,x.introAr,x.tags].join(' ').toLowerCase().includes(q));count.textContent=`عرض ${data.length} من ${CATALOGUE_SYSTEMS.length} نظام`;empty.style.display=data.length?'none':'block';grid.innerHTML=data.map((x,i)=>`<article class="system-card"><div class="system-card-top"><div><span class="system-category">${x.categoryAr}</span><h2>${x.nameAr}</h2></div><span class="system-number">#${String(i+1).padStart(2,'0')}</span></div><p>${x.introAr}</p><div class="system-meta"><div><strong>صفحات الداتا شيت</strong>${x.page} - ${x.endPage}</div><div><strong>فهرس القطاعات</strong>ص ${CATALOGUE_META.profileIndexStart}-${CATALOGUE_META.profileIndexEnd}</div></div><div class="system-actions"><a class="btn btn-primary" target="_blank" href="GCatalogue_2027.pdf#page=${x.page+2}">فتح الداتا شيت</a><a class="btn btn-secondary" target="_blank" href="GCatalogue_2027.pdf#page=${x.page+2}">PDF</a></div></article>`).join('')}
+    search.addEventListener('input',render);render();
+  </script>
+</body></html>

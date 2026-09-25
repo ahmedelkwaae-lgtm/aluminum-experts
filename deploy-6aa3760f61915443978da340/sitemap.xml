@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Arabic Pages -->
+  <url>
+    <loc>https://www.aemetall.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/index-en.html"/>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/about-en.html"/>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/services-en.html"/>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/portfolio-en.html"/>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/catalogue.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/catalogue.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/catalogue-en.html"/>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.aemetall.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aemetall.com/contact-en.html"/>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/privacy.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/terms.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://www.aemetall.com/index-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/about-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/services-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/portfolio-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/catalogue-en.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/contact-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/privacy-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aemetall.com/terms-en.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

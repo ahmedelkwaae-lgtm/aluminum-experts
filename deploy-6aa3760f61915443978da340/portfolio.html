@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ae metall - معرض الأعمال الاحترافي | أنظمة الألومنيوم المعماري</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="معرض أعمال احترافي يضم 1000+ صورة لأنظمة الألومنيوم المعماري: واجهات، سيكوريت، كلادينج، شبابيك، أبواب، كبائن شاور، مطابخ، بيرجولا وأكثر.">
+  <meta property="og:title" content="ae metall - معرض الأعمال">
+  <meta property="og:description" content="أكثر من 1000 مشروع في الألومنيوم المعماري والزجاج والواجهات">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Portfolio Page Exclusive Styles ─────────────────── */
+
+    /* Hero */
+    .portfolio-hero {
+      background: linear-gradient(135deg, #0a0f1e 0%, #1a1a2e 50%, #0f3460 100%);
+      padding: 90px 0 70px;
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .portfolio-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 25% 60%, rgba(192,57,43,0.3) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 30%, rgba(212,172,13,0.2) 0%, transparent 50%);
+    }
+    .portfolio-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .portfolio-hero .container { position: relative; z-index: 2; }
+    .portfolio-hero-badge {
+      display: inline-block;
+      background: rgba(212,172,13,0.2); color: #d4ac0d;
+      border: 1px solid rgba(212,172,13,0.5);
+      padding: 6px 22px; border-radius: 50px; font-size: 0.82rem; font-weight: 800;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .portfolio-hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 900;
+      color: #fff; line-height: 1.25; margin-bottom: 16px;
+    }
+    .portfolio-hero h1 em { color: #d4ac0d; font-style: normal; }
+    .portfolio-hero p {
+      color: rgba(255,255,255,0.75); font-size: clamp(1rem, 1.8vw, 1.15rem);
+      max-width: 640px; margin: 0 auto 36px; line-height: 1.8;
+    }
+    .hero-stats-row {
+      display: flex; gap: 36px; justify-content: center; flex-wrap: wrap;
+      margin-top: 44px; padding-top: 36px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat strong {
+      display: block; font-size: clamp(1.8rem,3vw,2.4rem); font-weight: 900;
+      color: #d4ac0d; line-height: 1;
+    }
+    .hero-stat span {
+      font-size: 0.82rem; color: rgba(255,255,255,0.6); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px;
+    }
+
+    /* Search Bar */
+    .search-bar-wrap {
+      background: #fff; padding: 28px 0;
+      border-bottom: 1px solid #eee;
+      position: sticky; top: 70px; z-index: 900;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+    .search-inner {
+      display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+    }
+    .search-input-wrap {
+      flex: 1; min-width: 240px; position: relative;
+    }
+    .search-input-wrap svg {
+      position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+      color: #999; pointer-events: none;
+    }
+    #gallerySearch {
+      width: 100%; padding: 12px 48px 12px 20px;
+      border: 2px solid #e9ecef; border-radius: 50px;
+      font-size: 0.95rem; font-family: inherit;
+      outline: none; transition: border-color 0.3s, box-shadow 0.3s;
+      background: #f8f9fa;
+    }
+    #gallerySearch:focus {
+      border-color: #c0392b; box-shadow: 0 0 0 4px rgba(192,57,43,0.1);
+      background: #fff;
+    }
+    .search-count {
+      font-size: 0.85rem; color: #999; white-space: nowrap; font-weight: 600;
+    }
+    .search-count span { color: #c0392b; font-weight: 800; }
+
+    /* Category Filters */
+    .filters-section {
+      background: #f8f9fa; padding: 24px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .filters-inner {
+      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    }
+    .filters-label {
+      font-size: 0.8rem; font-weight: 800; color: #999;
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-left: 4px; white-space: nowrap;
+    }
+    .filter-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 18px; border-radius: 50px;
+      border: 2px solid #e0e0e0; background: #fff;
+      color: #555; font-size: 0.86rem; font-weight: 700;
+      cursor: pointer; transition: all 0.25s ease;
+      font-family: inherit;
+    }
+    .filter-chip:hover {
+      border-color: #c0392b; color: #c0392b;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(192,57,43,0.15);
+    }
+    .filter-chip.active {
+      background: linear-gradient(135deg, #c0392b, #922b21);
+      border-color: transparent; color: #fff;
+      box-shadow: 0 6px 18px rgba(192,57,43,0.3);
+      transform: translateY(-1px);
+    }
+    .filter-chip .chip-count {
+      background: rgba(255,255,255,0.25); border-radius: 50px;
+      padding: 1px 7px; font-size: 0.75rem;
+    }
+    .filter-chip:not(.active) .chip-count {
+      background: rgba(192,57,43,0.1); color: #c0392b;
+    }
+
+    /* View Toggle */
+    .view-toggle { display: flex; gap: 6px; }
+    .view-btn {
+      width: 36px; height: 36px; border-radius: 8px;
+      border: 2px solid #e0e0e0; background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.2s; color: #888;
+    }
+    .view-btn.active, .view-btn:hover {
+      border-color: #c0392b; color: #c0392b; background: rgba(192,57,43,0.05);
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      padding: 48px 0 80px;
+      background: linear-gradient(180deg, #f9f7f5 0%, #fff 100%);
+    }
+    .gallery-toolbar {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 32px; flex-wrap: wrap; gap: 16px;
+    }
+    .gallery-title {
+      font-size: 1.05rem; font-weight: 800; color: #1a1a2e;
+    }
+    .gallery-title span { color: #c0392b; }
+
+    /* Grid */
+    #galleryGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      transition: all 0.3s ease;
+    }
+    #galleryGrid.view-3col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #galleryGrid.view-2col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #galleryGrid.view-list {
+      grid-template-columns: 1fr;
+    }
+
+    /* Gallery Card */
+    .gal-card {
+      background: #fff; border-radius: 16px;
+      overflow: hidden; border: 1px solid #ebebeb;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: pointer;
+      opacity: 0; transform: translateY(24px);
+      animation: cardIn 0.5s ease forwards;
+    }
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gal-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+    }
+    .gal-img-wrap {
+      position: relative; overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .gal-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+      opacity: 0; transition: opacity 0.4s ease, transform 0.6s ease;
+    }
+    .gal-img-wrap img.loaded { opacity: 1; }
+    .gal-card:hover .gal-img-wrap img { transform: scale(1.08); }
+    .gal-img-skeleton {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 400% 100%;
+      animation: skeleton 1.4s ease infinite;
+    }
+    @keyframes skeleton {
+      0%   { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .gal-img-skeleton.hidden { display: none; }
+    .gal-cat-badge {
+      position: absolute; top: 12px; right: 12px; z-index: 2;
+      background: linear-gradient(135deg, #c0392b, #922b21);
+      color: #fff; padding: 4px 12px; border-radius: 50px;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.3px;
+    }
+    .gal-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,15,30,0.7) 0%, transparent 55%);
+      opacity: 0; transition: opacity 0.35s ease;
+      display: flex; align-items: flex-end; padding: 16px;
+    }
+    .gal-card:hover .gal-overlay { opacity: 1; }
+    .gal-overlay-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.92); color: #c0392b;
+      padding: 7px 16px; border-radius: 50px; font-size: 0.8rem;
+      font-weight: 800; transform: translateY(8px);
+      transition: transform 0.3s ease 0.05s;
+    }
+    .gal-card:hover .gal-overlay-btn { transform: translateY(0); }
+    .gal-info { padding: 14px 16px 16px; }
+    .gal-info h3 {
+      font-size: 0.9rem; font-weight: 700; color: #1a1a2e;
+      line-height: 1.4; margin-bottom: 6px;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .gal-info p {
+      font-size: 0.78rem; color: #888; line-height: 1.6;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    /* List view card */
+    #galleryGrid.view-list .gal-card {
+      display: grid; grid-template-columns: 200px 1fr;
+    }
+    #galleryGrid.view-list .gal-img-wrap { aspect-ratio: unset; height: 160px; }
+    #galleryGrid.view-list .gal-info { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+    #galleryGrid.view-list .gal-info h3 { font-size: 1.05rem; margin-bottom: 8px; -webkit-line-clamp: 1; }
+    #galleryGrid.view-list .gal-info p { font-size: 0.88rem; -webkit-line-clamp: 3; }
+
+    /* Load More */
+    .load-more-section {
+      text-align: center; padding: 40px 0 20px;
+    }
+    .load-more-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 40px; border-radius: 50px;
+      background: linear-gradient(135deg, #c0392b, #922b21);
+      color: #fff; border: none; font-weight: 800; font-size: 1rem;
+      cursor: pointer; font-family: inherit;
+      box-shadow: 0 6px 20px rgba(192,57,43,0.35);
+      transition: all 0.3s ease;
+    }
+    .load-more-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(192,57,43,0.45);
+    }
+    .load-more-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .load-progress {
+      margin-top: 16px; color: #888; font-size: 0.85rem; font-weight: 600;
+    }
+    .load-progress .prog-bar {
+      display: block; width: 200px; height: 4px;
+      background: #eee; border-radius: 2px; margin: 10px auto 0;
+      overflow: hidden;
+    }
+    .load-progress .prog-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #c0392b, #d4ac0d);
+      border-radius: 2px; transition: width 0.4s ease;
+    }
+
+    /* Empty State */
+    .empty-state {
+      text-align: center; padding: 80px 20px; display: none;
+    }
+    .empty-state.visible { display: block; }
+    .empty-state svg { margin: 0 auto 20px; opacity: 0.3; }
+    .empty-state h3 { font-size: 1.3rem; color: #555; margin-bottom: 8px; }
+    .empty-state p { color: #999; }
+
+    /* Lightbox */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 2000;
+      background: rgba(4,8,16,0.95); align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .lightbox.open { display: flex; animation: fadeIn 0.25s ease; }
+    .lightbox-inner {
+      display: grid; grid-template-columns: 1fr 360px;
+      max-width: 1100px; width: 100%; background: #fff;
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+      max-height: 90vh;
+      animation: scaleIn 0.3s ease;
+    }
+    .lb-image-side {
+      background: #0a0f1e; position: relative; min-height: 400px;
+    }
+    .lb-image-side img {
+      width: 100%; height: 100%;
+      max-height: 90vh; object-fit: contain;
+    }
+    .lb-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      display: flex; justify-content: space-between; width: 100%;
+      padding: 0 12px; pointer-events: none;
+    }
+    .lb-nav-btn {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,255,255,0.15); border: none;
+      color: #fff; font-size: 1.4rem; cursor: pointer;
+      pointer-events: all;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s; display: flex; align-items: center; justify-content: center;
+    }
+    .lb-nav-btn:hover { background: rgba(192,57,43,0.7); }
+    .lb-info-side {
+      display: flex; flex-direction: column;
+      padding: 30px 28px; overflow-y: auto;
+    }
+    .lb-close {
+      align-self: flex-end; width: 36px; height: 36px; border-radius: 50%;
+      background: #f0f0f0; border: none; cursor: pointer; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      color: #555; transition: background 0.2s; margin-bottom: 20px;
+    }
+    .lb-close:hover { background: #c0392b; color: #fff; }
+    .lb-cat-tag {
+      display: inline-block; background: rgba(192,57,43,0.1);
+      color: #c0392b; padding: 5px 14px; border-radius: 50px;
+      font-size: 0.75rem; font-weight: 800; margin-bottom: 14px;
+      width: fit-content;
+    }
+    .lb-info-side h2 {
+      font-size: 1.35rem; font-weight: 800; color: #1a1a2e;
+      line-height: 1.4; margin-bottom: 14px;
+    }
+    .lb-info-side p {
+      color: #666; font-size: 0.93rem; line-height: 1.8; margin-bottom: 24px;
+    }
+    .lb-specs {
+      background: #f8f9fa; border-radius: 12px; padding: 18px;
+      margin-bottom: 24px;
+    }
+    .lb-spec-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 7px 0; border-bottom: 1px solid #eee;
+      font-size: 0.85rem;
+    }
+    .lb-spec-row:last-child { border-bottom: none; }
+    .lb-spec-row dt { color: #888; font-weight: 600; }
+    .lb-spec-row dd { color: #1a1a2e; font-weight: 800; }
+    .lb-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+    .lb-counter {
+      position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,0.5); color: #fff; padding: 4px 14px;
+      border-radius: 20px; font-size: 0.78rem; font-weight: 700;
+      backdrop-filter: blur(4px);
+    }
+
+    /* Categories Overview */
+    .cats-overview {
+      padding: 70px 0 50px;
+      background: #fff;
+    }
+    .cats-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px;
+    }
+    .cat-overview-card {
+      background: linear-gradient(160deg, #fff 0%, #faf7f5 100%);
+      border: 1px solid #eee; border-radius: 14px; padding: 20px 16px;
+      text-align: center; cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cat-overview-card:hover, .cat-overview-card.active {
+      border-color: #c0392b;
+      box-shadow: 0 8px 24px rgba(192,57,43,0.15);
+      transform: translateY(-4px);
+    }
+    .cat-overview-card.active { background: rgba(192,57,43,0.04); }
+    .cat-icon { font-size: 2rem; margin-bottom: 8px; line-height: 1; }
+    .cat-name {
+      font-size: 0.8rem; font-weight: 800; color: #1a1a2e;
+      margin-bottom: 4px; line-height: 1.3;
+    }
+    .cat-num {
+      font-size: 0.72rem; color: #c0392b; font-weight: 800;
+    }
+
+    /* CTA Banner */
+    .portfolio-cta {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+      padding: 70px 0;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .portfolio-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(192,57,43,0.35) 0%, transparent 65%);
+    }
+    .portfolio-cta .container { position: relative; z-index: 1; }
+    .portfolio-cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem); color: #fff; font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .portfolio-cta p {
+      color: rgba(255,255,255,0.7); margin-bottom: 32px; font-size: 1.05rem;
+    }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* Scroll to top */
+    .scroll-top-btn {
+      position: fixed; bottom: 90px; left: 20px; z-index: 500;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, #c0392b, #922b21);
+      border: none; color: #fff; font-size: 1.2rem; cursor: pointer;
+      box-shadow: 0 4px 14px rgba(192,57,43,0.4);
+      opacity: 0; pointer-events: none; transition: all 0.3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .scroll-top-btn.visible { opacity: 1; pointer-events: all; }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      #galleryGrid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 860px) {
+      #galleryGrid { grid-template-columns: repeat(2, 1fr); }
+      .cats-grid { grid-template-columns: repeat(4, 1fr); }
+      .lightbox-inner { grid-template-columns: 1fr; max-height: 95vh; }
+      .lb-image-side { min-height: 260px; max-height: 42vh; }
+      .lb-info-side { max-height: 52vh; }
+      .hero-stats-row { gap: 24px; }
+    }
+    @media (max-width: 600px) {
+      #galleryGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .cats-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .cat-overview-card { padding: 14px 10px; }
+      .cat-icon { font-size: 1.5rem; }
+      .filter-chip { padding: 6px 12px; font-size: 0.8rem; }
+      .search-bar-wrap { padding: 16px 0; }
+      .filters-section { padding: 14px 0; }
+    }
+    @media (max-width: 420px) {
+      #galleryGrid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .cats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#galleryGrid">تخطي إلى المعرض</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="ae metall" width="46" height="46">
+        <span>ae metall</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a class="active" href="portfolio.html">معرض الأعمال</a></li>
+          <li><a href="design2027.html" style="color:#d4ac0d;font-weight:800;">كتالوج 2027 ✦</a></li><li><a href="catalogue.html">الكتالوج الفني</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a class="lang-pill" href="portfolio-en.html">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <div class="portfolio-hero-badge">✦ معرض الأعمال الاحترافي</div>
+      <h1>أكثر من <em>1000 صورة</em> لأعمال<br>الألومنيوم المعماري</h1>
+      <p>استعرض مجموعتنا الشاملة من الواجهات، وأنظمة الزجاج، والكلادينج، والشبابيك، والأبواب، وكبائن الشاور، والمطابخ، وغيرها الكثير.</p>
+      <div class="hero-stats-row">
+        <div class="hero-stat"><strong>1014+</strong><span>صورة واقعية</span></div>
+        <div class="hero-stat"><strong>12</strong><span>قطاع رئيسي</span></div>
+        <div class="hero-stat"><strong>18+</strong><span>سنة خبرة</span></div>
+        <div class="hero-stat"><strong>120+</strong><span>مشروع منجز</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design2027 Banner -->
+  <div style="background:linear-gradient(135deg,#0a0f1e 0%,#1a1a2e 50%,#0d2137 100%);padding:24px 0;text-align:center;border-top:2px solid rgba(212,172,13,0.3);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div style="text-align:right;">
+        <div style="color:#d4ac0d;font-size:0.78rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">✦ جديد</div>
+        <div style="color:#fff;font-size:1.1rem;font-weight:900;">كتالوج تصميمات <span style="color:#d4ac0d;">2027</span></div>
+        <div style="color:rgba(255,255,255,0.6);font-size:0.82rem;margin-top:3px;">1261+ فكرة تصميمية لمشروعك القادم</div>
+      </div>
+      <a href="design2027.html" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#d4ac0d,#b8960a);color:#1a1a2e;padding:12px 28px;border-radius:50px;font-weight:900;font-size:0.92rem;text-decoration:none;box-shadow:0 6px 20px rgba(212,172,13,0.3);transition:all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+        استكشف الكتالوج ←
+      </a>
+    </div>
+  </div>
+
+  <!-- Categories Overview -->
+  <section class="cats-overview">
+    <div class="container">
+      <div class="cats-grid" id="catsOverview" role="list">
+        <!-- تُملأ بـ JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <div class="search-bar-wrap" role="search">
+    <div class="container">
+      <div class="search-inner">
+        <div class="search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" id="gallerySearch" placeholder="ابحث عن نوع العمل... (واجهة، شباك، كلادينج...)" aria-label="بحث في المعرض">
+        </div>
+        <div class="view-toggle" role="group" aria-label="طريقة العرض">
+          <button class="view-btn active" id="view4" title="4 أعمدة" aria-label="4 أعمدة">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="3" height="3"/><rect x="4.5" y="0" width="3" height="3"/><rect x="9" y="0" width="3" height="3"/><rect x="13.5" y="0" width="3" height="3"/><rect x="0" y="4.5" width="3" height="3"/><rect x="4.5" y="4.5" width="3" height="3"/><rect x="9" y="4.5" width="3" height="3"/><rect x="13.5" y="4.5" width="3" height="3"/></svg>
+          </button>
+          <button class="view-btn" id="view3" title="3 أعمدة" aria-label="3 أعمدة">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="4" height="4"/><rect x="6" y="0" width="4" height="4"/><rect x="12" y="0" width="4" height="4"/><rect x="0" y="6" width="4" height="4"/><rect x="6" y="6" width="4" height="4"/><rect x="12" y="6" width="4" height="4"/></svg>
+          </button>
+          <button class="view-btn" id="view2" title="2 أعمدة" aria-label="2 أعمدة">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="6" height="6"/><rect x="10" y="0" width="6" height="6"/><rect x="0" y="10" width="6" height="6"/><rect x="10" y="10" width="6" height="6"/></svg>
+          </button>
+          <button class="view-btn" id="viewList" title="قائمة" aria-label="عرض قائمة">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="16" height="3"/><rect x="0" y="5" width="16" height="3"/><rect x="0" y="10" width="16" height="3"/></svg>
+          </button>
+        </div>
+        <div class="search-count" id="searchCount">عرض <span id="shownCount">0</span> من <span id="totalCount">1014</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-section">
+    <div class="container">
+      <div class="filters-inner" id="filtersBar" role="group" aria-label="تصفية حسب القطاع">
+        <span class="filters-label">التصنيف:</span>
+        <!-- تُملأ بـ JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-toolbar">
+        <div class="gallery-title" id="galleryTitle">جميع الأعمال <span id="activeCatName"></span></div>
+        <div id="sortWrap">
+          <select id="sortSelect" style="padding:7px 14px;border:2px solid #eee;border-radius:8px;font-family:inherit;font-size:0.85rem;cursor:pointer;outline:none;">
+            <option value="default">الترتيب الافتراضي</option>
+            <option value="az">أبجدياً (أ-ي)</option>
+            <option value="za">أبجدياً (ي-أ)</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="galleryGrid" class="view-4col" role="list" aria-label="معرض الأعمال">
+        <!-- تُملأ بـ JS -->
+      </div>
+
+      <div class="empty-state" id="emptyState" role="status" aria-live="polite">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          <line x1="8" y1="11" x2="14" y2="11" stroke-dasharray="2"/>
+        </svg>
+        <h3>لا توجد نتائج</h3>
+        <p>جرب كلمة بحث مختلفة أو اختر قطاعاً آخر</p>
+      </div>
+
+      <div class="load-more-section" id="loadMoreSection">
+        <button type="button" class="load-more-btn" id="loadMoreBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          عرض المزيد من الأعمال
+        </button>
+        <div class="load-progress">
+          <span id="progressText">عرض 48 من 1014</span>
+          <span class="prog-bar"><span class="prog-fill" id="progFill" style="width:5%"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="portfolio-cta">
+    <div class="container">
+      <h2>هل تريد تنفيذ مشروعك معنا؟</h2>
+      <p>فريقنا جاهز لتقديم استشارة مجانية ومتكاملة لمشروعك</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">اطلب عرض سعر الآن</a>
+        <a href="https://wa.me/+201001382022" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          تواصل واتساب
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="ae metall" width="40" height="40">
+        <span>ae metall</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      </ul>
+      <div class="footer-contact">
+        <a href="https://wa.me/+201001382022" class="contact-item">
+          <img src="assets/images/whatsapp-icon.svg" alt="واتساب" class="contact-icon">
+          <span class="contact-text">واتساب</span>
+        </a>
+        <a href="mailto:ahmedelkwaae@gmail.com" class="contact-item">
+          <img src="assets/images/email-icon.svg" alt="البريد" class="contact-icon">
+          <span class="contact-text">البريد الإلكتروني</span>
+        </a>
+        <a href="https://www.facebook.com/aeMETALL.eg" class="contact-item" target="_blank" rel="noopener">
+          <img src="assets/images/facebook-icon.svg" alt="فيسبوك" class="contact-icon">
+          <span class="contact-text">فيسبوك</span>
+        </a>
+      </div>
+      <p class="copy">© 2025 ae metall. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض الصورة" aria-hidden="true">
+    <div class="lightbox-inner">
+      <div class="lb-image-side">
+        <img id="lbImg" src="" alt="" loading="lazy">
+        <div class="lb-nav" aria-hidden="true">
+          <button class="lb-nav-btn" id="lbPrev" aria-label="السابق">‹</button>
+          <button class="lb-nav-btn" id="lbNext" aria-label="التالي">›</button>
+        </div>
+        <div class="lb-counter" id="lbCounter" aria-live="polite">1 / 1014</div>
+      </div>
+      <div class="lb-info-side">
+        <button class="lb-close" id="lbClose" aria-label="إغلاق">✕</button>
+        <div class="lb-cat-tag" id="lbCat">قطاع</div>
+        <h2 id="lbTitle">عنوان</h2>
+        <p id="lbDesc">وصف</p>
+        <dl class="lb-specs">
+          <div class="lb-spec-row"><dt>المادة</dt><dd>ألومنيوم 6063-T5</dd></div>
+          <div class="lb-spec-row"><dt>التشطيب</dt><dd id="lbFinish">بودرة كوتينج</dd></div>
+          <div class="lb-spec-row"><dt>الاستخدام</dt><dd id="lbCatFull">معماري</dd></div>
+        </dl>
+        <div class="lb-actions">
+          <a href="contact.html" class="btn btn-primary" style="font-size:0.88rem;padding:10px 20px;">طلب عرض سعر</a>
+          <a href="https://wa.me/+201001382022" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.88rem;padding:10px 20px;">واتساب</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="العودة للأعلى">↑</button>
+
+  <!-- Floating WhatsApp -->
+  <button class="floating-cta whatsapp" data-phone="+201001382022" data-message="مرحباً، رأيت معرض أعمالكم وأريد الاستفسار" aria-label="تواصل عبر واتساب"></button>
+
+  <!-- Scripts -->
+  <script src="assets/gallery-data.js"></script>
+  <script src="assets/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ae metall – كتالوج تصميمات 2027 | أحدث أنظمة الألومنيوم المعماري</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="كتالوج تصميمات 2027 من ae metall – أحدث صيحات الألومنيوم المعماري: واجهات، مطابخ، شبابيك، أبواب، كبائن شاور، بيرجولا وأكثر. استلهم تصميم مشروعك القادم.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* ── Hero كتالوج 2027 ─────────────────────────────────── */
+    .cat27-hero {
+      background: linear-gradient(135deg, #0a0f1e 0%, #1a1a2e 40%, #0d2137 100%);
+      padding: 80px 0 60px; text-align: center; position: relative; overflow: hidden;
+    }
+    .cat27-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(212,172,13,0.25) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 20%, rgba(192,57,43,0.2)  0%, transparent 50%);
+    }
+    .cat27-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .cat27-hero .container { position: relative; z-index: 2; }
+    .cat27-year-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, rgba(212,172,13,0.25), rgba(212,172,13,0.1));
+      border: 1px solid rgba(212,172,13,0.5); color: #d4ac0d;
+      padding: 8px 24px; border-radius: 50px; font-size: 0.85rem;
+      font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 22px; animation: pulse-gold 2.5s infinite;
+    }
+    @keyframes pulse-gold {
+      0%,100% { box-shadow: 0 0 0 0 rgba(212,172,13,0.3); }
+      50%      { box-shadow: 0 0 0 10px rgba(212,172,13,0); }
+    }
+    .cat27-year-badge .year-num {
+      font-size: 1.3rem; font-weight: 900; color: #f0c93a;
+    }
+    .cat27-hero h1 {
+      font-size: clamp(2.2rem,5vw,3.8rem); font-weight: 900; color: #fff;
+      line-height: 1.2; margin-bottom: 18px;
+    }
+    .cat27-hero h1 em { color: #d4ac0d; font-style: normal; }
+    .cat27-hero p {
+      color: rgba(255,255,255,0.72); font-size: clamp(1rem,1.8vw,1.15rem);
+      max-width: 620px; margin: 0 auto 36px; line-height: 1.85;
+    }
+    .cat27-stats {
+      display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;
+      padding-top: 36px; border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .cat27-stat strong {
+      display: block; font-size: clamp(1.8rem,3vw,2.4rem);
+      font-weight: 900; color: #d4ac0d; line-height: 1;
+    }
+    .cat27-stat span {
+      font-size: 0.8rem; color: rgba(255,255,255,0.6);
+      font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
+    }
+
+    /* ── Notice Bar ───────────────────────────────────────── */
+    .cat27-notice {
+      background: linear-gradient(135deg, #d4ac0d, #b8960a);
+      padding: 16px 0; text-align: center;
+    }
+    .cat27-notice p {
+      color: #1a1a2e; font-weight: 800; font-size: 0.92rem;
+      margin: 0; display: flex; align-items: center;
+      justify-content: center; gap: 10px; flex-wrap: wrap;
+    }
+    .cat27-notice .notice-icon { font-size: 1.1rem; }
+
+    /* ── Search + Filters ─────────────────────────────────── */
+    .cat27-controls {
+      background: #fff; padding: 24px 0;
+      border-bottom: 1px solid #eee;
+      position: sticky; top: 70px; z-index: 900;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .cat27-search-row {
+      display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .cat27-search-wrap { flex: 1; min-width: 240px; position: relative; }
+    .cat27-search-wrap svg {
+      position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+      color: #aaa; pointer-events: none;
+    }
+    #cat27Search {
+      width: 100%; padding: 12px 48px 12px 20px;
+      border: 2px solid #e0e0e0; border-radius: 50px;
+      font-size: 0.95rem; font-family: inherit; outline: none;
+      background: #f9f9f9; transition: all 0.3s;
+    }
+    #cat27Search:focus { border-color: #d4ac0d; box-shadow: 0 0 0 4px rgba(212,172,13,0.12); background: #fff; }
+    .cat27-count { font-size: 0.85rem; color: #999; font-weight: 700; white-space: nowrap; }
+    .cat27-count span { color: #d4ac0d; font-weight: 900; }
+    .cat27-filters {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .cat27-filters .flabel {
+      font-size: 0.78rem; font-weight: 800; color: #aaa;
+      text-transform: uppercase; letter-spacing: 1px; margin-left: 4px;
+    }
+    .cat27-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 7px 16px; border-radius: 50px;
+      border: 2px solid #e0e0e0; background: #fff;
+      color: #555; font-size: 0.83rem; font-weight: 700;
+      cursor: pointer; transition: all 0.25s; font-family: inherit;
+    }
+    .cat27-chip:hover { border-color: #d4ac0d; color: #b8960a; transform: translateY(-1px); }
+    .cat27-chip.active {
+      background: linear-gradient(135deg, #d4ac0d, #b8960a);
+      border-color: transparent; color: #fff;
+      box-shadow: 0 5px 16px rgba(212,172,13,0.35); transform: translateY(-1px);
+    }
+    .cat27-chip .ccount {
+      background: rgba(255,255,255,0.25); border-radius: 50px;
+      padding: 1px 6px; font-size: 0.72rem;
+    }
+    .cat27-chip:not(.active) .ccount { background: rgba(212,172,13,0.1); color: #b8960a; }
+
+    /* ── Gallery ──────────────────────────────────────────── */
+    .cat27-section { padding: 50px 0 90px; background: linear-gradient(180deg,#fdfaf0 0%,#fff 100%); }
+    .cat27-toolbar {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 28px; flex-wrap: wrap; gap: 14px;
+    }
+    .cat27-toolbar-title { font-size: 1rem; font-weight: 800; color: #1a1a2e; }
+    .cat27-toolbar-title em { color: #d4ac0d; font-style: normal; }
+    #cat27Grid {
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 20px;
+    }
+
+    /* Card */
+    .cat27-card {
+      background: #fff; border-radius: 16px; overflow: hidden;
+      border: 1px solid #eee; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      cursor: pointer; transition: all 0.35s ease;
+      opacity: 0; transform: translateY(22px);
+      animation: c27In 0.45s ease forwards;
+    }
+    @keyframes c27In { to { opacity:1; transform:translateY(0); } }
+    .cat27-card:hover { transform: translateY(-8px); box-shadow: 0 16px 38px rgba(212,172,13,0.18); border-color: rgba(212,172,13,0.4); }
+    .cat27-img-wrap { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+    .cat27-img-wrap img { width:100%; height:100%; object-fit:cover; opacity:0; transition: opacity 0.4s, transform 0.55s; }
+    .cat27-img-wrap img.loaded { opacity:1; }
+    .cat27-card:hover .cat27-img-wrap img { transform: scale(1.08); }
+    .cat27-skeleton { position:absolute; inset:0; background:linear-gradient(90deg,#f5f0dc 25%,#ede8ce 50%,#f5f0dc 75%); background-size:400% 100%; animation:c27skel 1.4s ease infinite; }
+    @keyframes c27skel { 0%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .cat27-skeleton.gone { display:none; }
+    .cat27-badge-2027 {
+      position:absolute; top:10px; right:10px; z-index:2;
+      background: linear-gradient(135deg,#d4ac0d,#b8960a);
+      color:#fff; padding:3px 10px; border-radius:50px;
+      font-size:0.68rem; font-weight:900; letter-spacing:0.5px;
+    }
+    .cat27-cat-badge {
+      position:absolute; top:10px; left:10px; z-index:2;
+      background:rgba(26,26,46,0.75); color:#fff;
+      padding:3px 10px; border-radius:50px;
+      font-size:0.68rem; font-weight:800; backdrop-filter:blur(4px);
+    }
+    .cat27-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(to top,rgba(10,15,30,0.65) 0%,transparent 55%);
+      opacity:0; transition:opacity 0.3s;
+      display:flex; align-items:flex-end; padding:14px;
+    }
+    .cat27-card:hover .cat27-overlay { opacity:1; }
+    .cat27-overlay-btn {
+      display:inline-flex; align-items:center; gap:5px;
+      background:rgba(255,255,255,0.92); color:#b8960a;
+      padding:6px 14px; border-radius:50px; font-size:0.78rem; font-weight:800;
+      transform:translateY(8px); transition:transform 0.25s ease 0.05s;
+    }
+    .cat27-card:hover .cat27-overlay-btn { transform:translateY(0); }
+    .cat27-info { padding:13px 15px 15px; }
+    .cat27-info h3 {
+      font-size:0.88rem; font-weight:700; color:#1a1a2e; line-height:1.4;
+      margin-bottom:4px; display:-webkit-box;
+      -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    }
+    .cat27-info p {
+      font-size:0.75rem; color:#999; line-height:1.55;
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    }
+
+    /* Load More */
+    .cat27-loadmore { text-align:center; padding:40px 0 20px; }
+    .cat27-loadmore-btn {
+      display:inline-flex; align-items:center; gap:10px;
+      padding:13px 38px; border-radius:50px;
+      background:linear-gradient(135deg,#d4ac0d,#b8960a);
+      color:#fff; border:none; font-weight:800; font-size:1rem;
+      cursor:pointer; font-family:inherit;
+      box-shadow:0 6px 20px rgba(212,172,13,0.3); transition:all 0.3s;
+    }
+    .cat27-loadmore-btn:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(212,172,13,0.4); }
+    .cat27-loadmore-btn:disabled { opacity:0.5; cursor:not-allowed; transform:none; }
+    .cat27-progress { margin-top:14px; color:#aaa; font-size:0.83rem; font-weight:700; }
+    .cat27-prog-bar { display:block; width:180px; height:3px; background:#eee; border-radius:2px; margin:8px auto 0; overflow:hidden; }
+    .cat27-prog-fill { height:100%; background:linear-gradient(90deg,#d4ac0d,#c0392b); border-radius:2px; transition:width 0.4s; }
+
+    /* Empty */
+    .cat27-empty { text-align:center; padding:70px 20px; display:none; }
+    .cat27-empty.show { display:block; }
+    .cat27-empty h3 { font-size:1.2rem; color:#888; margin-bottom:8px; }
+    .cat27-empty p { color:#bbb; }
+
+    /* Lightbox */
+    .cat27-lb {
+      display:none; position:fixed; inset:0; z-index:2000;
+      background:rgba(4,8,16,0.96); align-items:center; justify-content:center; padding:20px;
+    }
+    .cat27-lb.open { display:flex; animation:fadeIn 0.2s ease; }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    .cat27-lb-inner {
+      display:grid; grid-template-columns:1fr 340px;
+      max-width:1060px; width:100%; background:#fff;
+      border-radius:20px; overflow:hidden; max-height:90vh;
+      box-shadow:0 40px 100px rgba(0,0,0,0.6); animation:scIn 0.3s ease;
+    }
+    @keyframes scIn { from{opacity:0;transform:scale(0.92)} to{opacity:1;transform:scale(1)} }
+    .cat27-lb-img-side { background:#0a0f1e; position:relative; min-height:380px; }
+    .cat27-lb-img-side img { width:100%; height:100%; max-height:90vh; object-fit:contain; }
+    .cat27-lb-nav { position:absolute; top:50%; transform:translateY(-50%); display:flex; justify-content:space-between; width:100%; padding:0 10px; pointer-events:none; }
+    .cat27-lb-nav-btn {
+      width:42px; height:42px; border-radius:50%; background:rgba(255,255,255,0.15);
+      border:none; color:#fff; font-size:1.3rem; cursor:pointer; pointer-events:all;
+      backdrop-filter:blur(4px); transition:background 0.2s; display:flex; align-items:center; justify-content:center;
+    }
+    .cat27-lb-nav-btn:hover { background:rgba(212,172,13,0.7); }
+    .cat27-lb-counter {
+      position:absolute; bottom:12px; left:50%; transform:translateX(-50%);
+      background:rgba(0,0,0,0.5); color:#fff; padding:3px 12px;
+      border-radius:20px; font-size:0.75rem; font-weight:700; backdrop-filter:blur(4px);
+    }
+    .cat27-lb-info { display:flex; flex-direction:column; padding:26px 24px; overflow-y:auto; }
+    .cat27-lb-close {
+      align-self:flex-end; width:34px; height:34px; border-radius:50%;
+      background:#f0f0f0; border:none; cursor:pointer; font-size:1rem;
+      display:flex; align-items:center; justify-content:center; color:#555;
+      transition:background 0.2s; margin-bottom:18px;
+    }
+    .cat27-lb-close:hover { background:#d4ac0d; color:#fff; }
+    .cat27-lb-year-tag {
+      display:inline-block; background:linear-gradient(135deg,rgba(212,172,13,0.15),rgba(212,172,13,0.05));
+      color:#b8960a; border:1px solid rgba(212,172,13,0.3);
+      padding:4px 12px; border-radius:50px; font-size:0.72rem; font-weight:900;
+      margin-bottom:10px; width:fit-content;
+    }
+    .cat27-lb-cat-tag {
+      display:inline-block; background:rgba(192,57,43,0.1); color:#c0392b;
+      padding:4px 12px; border-radius:50px; font-size:0.72rem; font-weight:800;
+      margin-bottom:12px; width:fit-content;
+    }
+    .cat27-lb-info h2 { font-size:1.2rem; font-weight:800; color:#1a1a2e; margin-bottom:10px; line-height:1.4; }
+    .cat27-lb-info p { color:#777; font-size:0.88rem; line-height:1.8; margin-bottom:20px; }
+    .cat27-lb-note {
+      background:linear-gradient(135deg,rgba(212,172,13,0.08),rgba(212,172,13,0.03));
+      border:1px solid rgba(212,172,13,0.2); border-radius:10px; padding:14px;
+      font-size:0.8rem; color:#888; line-height:1.7; margin-bottom:20px;
+    }
+    .cat27-lb-note strong { color:#b8960a; display:block; margin-bottom:4px; }
+    .cat27-lb-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:auto; }
+
+    /* CTA */
+    .cat27-cta {
+      background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);
+      padding:70px 0; text-align:center; position:relative; overflow:hidden;
+    }
+    .cat27-cta::before {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(ellipse at 50% 0%,rgba(212,172,13,0.3) 0%,transparent 60%);
+    }
+    .cat27-cta .container { position:relative; z-index:1; }
+    .cat27-cta h2 { color:#fff; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:900; margin-bottom:12px; }
+    .cat27-cta p { color:rgba(255,255,255,0.7); margin-bottom:30px; }
+    .cat27-cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    /* Scroll top */
+    .scroll-top-btn { position:fixed; bottom:90px; left:20px; z-index:500; width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#d4ac0d,#b8960a); border:none; color:#fff; font-size:1.2rem; cursor:pointer; opacity:0; pointer-events:none; transition:all 0.3s; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(212,172,13,0.4); }
+    .scroll-top-btn.visible { opacity:1; pointer-events:all; }
+
+    /* Responsive */
+    @media(max-width:1100px){ #cat27Grid{grid-template-columns:repeat(3,1fr);} }
+    @media(max-width:860px){
+      #cat27Grid{grid-template-columns:repeat(2,1fr);}
+      .cat27-lb-inner{grid-template-columns:1fr; max-height:95vh;}
+      .cat27-lb-img-side{min-height:240px; max-height:40vh;}
+      .cat27-lb-info{max-height:54vh;}
+    }
+    @media(max-width:560px){ #cat27Grid{grid-template-columns:repeat(2,1fr); gap:12px;} }
+  </style>
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#cat27Grid">تخطي إلى الكتالوج</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="ae metall" width="46" height="46">
+        <span>ae metall</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">معرض الأعمال</a></li>
+          <li><a class="active" href="design2027.html">كتالوج 2027</a></li><li><a href="catalogue.html">الكتالوج الفني</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a class="lang-pill" href="design2027-en.html">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="cat27-hero">
+    <div class="container">
+      <div class="cat27-year-badge">
+        <span>✦ كتالوج</span>
+        <span class="year-num">2027</span>
+        <span>أحدث التصميمات</span>
+      </div>
+      <h1>استلهم تصميمك من<br><em>كتالوج 2027</em></h1>
+      <p>أحدث صيحات الألومنيوم المعماري للعام الجديد — واجهات، مطابخ، شبابيك، أبواب، كبائن شاور، وأكثر من 1000 فكرة تصميمية متكاملة.</p>
+      <div class="cat27-stats">
+        <div class="cat27-stat"><strong>1261+</strong><span>فكرة تصميمية</span></div>
+        <div class="cat27-stat"><strong>10</strong><span>قطاع رئيسي</span></div>
+        <div class="cat27-stat"><strong>2027</strong><span>أحدث الصيحات</span></div>
+        <div class="cat27-stat"><strong>100%</strong><span>إلهام للمشاريع</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Bar -->
+  <div class="cat27-notice">
+    <div class="container">
+      <p>
+        <span class="notice-icon">💡</span>
+        هذا الكتالوج للإلهام والتصميم — أرسل لنا أي تصميم يعجبك وسنُنفذه لك بأعلى جودة
+        <a href="https://wa.me/+201001382022" target="_blank" rel="noopener"
+           style="margin-right:10px;background:#1a1a2e;color:#d4ac0d;padding:4px 14px;border-radius:50px;font-size:0.82rem;text-decoration:none;font-weight:800;">
+          تواصل الآن ←
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="cat27-controls">
+    <div class="container">
+      <div class="cat27-search-row">
+        <div class="cat27-search-wrap">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" id="cat27Search" placeholder="ابحث في الكتالوج... (مطبخ، واجهة، شباك...)" aria-label="بحث في كتالوج 2027">
+        </div>
+        <div class="cat27-count" id="cat27Count">عرض <span id="cat27Shown">0</span> من <span id="cat27Total">1261</span></div>
+      </div>
+      <div class="cat27-filters" id="cat27Filters" role="group" aria-label="تصفية الكتالوج">
+        <!-- تُملأ بـ JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <section class="cat27-section">
+    <div class="container">
+      <div class="cat27-toolbar">
+        <div class="cat27-toolbar-title">كتالوج تصميمات <em>2027</em> — <span id="cat27ActiveLabel">جميع الأقسام</span></div>
+      </div>
+      <div id="cat27Grid" role="list" aria-label="كتالوج تصميمات 2027"></div>
+      <div class="cat27-empty" id="cat27Empty" role="status" aria-live="polite">
+        <h3>لا توجد نتائج</h3>
+        <p>جرب كلمة بحث مختلفة أو اختر قسماً آخر</p>
+      </div>
+      <div class="cat27-loadmore" id="cat27LoadMoreSection">
+        <button type="button" class="cat27-loadmore-btn" id="cat27LoadMoreBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          عرض المزيد من التصميمات
+        </button>
+        <div class="cat27-progress">
+          <span id="cat27ProgressText">عرض 48 من 1261</span>
+          <span class="cat27-prog-bar"><span class="cat27-prog-fill" id="cat27ProgFill" style="width:4%"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cat27-cta">
+    <div class="container">
+      <h2>أعجبك تصميم من الكتالوج؟</h2>
+      <p>أرسل لنا الصورة وسنُنفذ لك نفس التصميم بأعلى مواصفات الألومنيوم المعماري</p>
+      <div class="cat27-cta-btns">
+        <a href="GCatalogue_2027.pdf" target="_blank" rel="noopener" download class="btn btn-primary" style="background:linear-gradient(135deg,#d4ac0d,#b8960a);border-color:transparent;">تحميل كتالوج PDF</a>
+        <a href="contact.html" class="btn btn-primary" style="background:linear-gradient(135deg,#d4ac0d,#b8960a);border-color:transparent;">اطلب التصميم الآن</a>
+        <a href="https://wa.me/+201001382022" target="_blank" rel="noopener" class="btn btn-outline">واتساب مباشر</a>
+        <a href="portfolio.html" class="btn btn-outline">معرض أعمالنا الحقيقية</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="ae metall" width="40" height="40">
+        <span>ae metall</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="portfolio.html">معرض الأعمال</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      <div class="footer-contact">
+        <a href="https://wa.me/+201001382022" class="contact-item"><img src="assets/images/whatsapp-icon.svg" alt="واتساب" class="contact-icon"><span class="contact-text">واتساب</span></a>
+        <a href="mailto:ahmedelkwaae@gmail.com" class="contact-item"><img src="assets/images/email-icon.svg" alt="البريد" class="contact-icon"><span class="contact-text">البريد</span></a>
+        <a href="https://www.facebook.com/aeMETALL.eg" target="_blank" rel="noopener" class="contact-item"><img src="assets/images/facebook-icon.svg" alt="فيسبوك" class="contact-icon"><span class="contact-text">فيسبوك</span></a>
+      </div>
+      <p class="copy">© 2025 ae metall. جميع الحقوق محفوظة. | كتالوج تصميمات 2027</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="cat27-lb" id="cat27Lb" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cat27-lb-inner">
+      <div class="cat27-lb-img-side">
+        <img id="cat27LbImg" src="" alt="">
+        <div class="cat27-lb-nav" aria-hidden="true">
+          <button class="cat27-lb-nav-btn" id="cat27LbPrev" aria-label="السابق">‹</button>
+          <button class="cat27-lb-nav-btn" id="cat27LbNext" aria-label="التالي">›</button>
+        </div>
+        <div class="cat27-lb-counter" id="cat27LbCounter" aria-live="polite">1 / 1261</div>
+      </div>
+      <div class="cat27-lb-info">
+        <button class="cat27-lb-close" id="cat27LbClose" aria-label="إغلاق">✕</button>
+        <div class="cat27-lb-year-tag">✦ كتالوج 2027</div>
+        <div class="cat27-lb-cat-tag" id="cat27LbCat">قسم</div>
+        <h2 id="cat27LbTitle">عنوان التصميم</h2>
+        <p id="cat27LbDesc">وصف التصميم</p>
+        <div class="cat27-lb-note">
+          <strong>💡 ملاحظة مهمة</strong>
+          هذا الكتالوج للإلهام والتصميم. يمكننا تنفيذ أي تصميم تختاره بأعلى مواصفات الألومنيوم المعماري حسب مقاسات مشروعك.
+        </div>
+        <div class="cat27-lb-actions">
+          <a href="https://wa.me/+201001382022" target="_blank" rel="noopener"
+             class="btn btn-primary" style="background:linear-gradient(135deg,#d4ac0d,#b8960a);border-color:transparent;font-size:0.85rem;padding:9px 18px;">
+            أريد هذا التصميم
+          </a>
+          <a href="contact.html" class="btn btn-secondary" style="font-size:0.85rem;padding:9px 18px;">طلب عرض سعر</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="العودة للأعلى">↑</button>
+  <button class="floating-cta whatsapp" data-phone="+201001382022" data-message="مرحباً، رأيت كتالوج 2027 وأريد تنفيذ تصميم" aria-label="واتساب"></button>
+
+  <script src="assets/design2027-data.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const CATS = [
+      {key:'all',       ar:'الكل',           icon:'🔷'},
+      {key:'kitchens',  ar:'مطابخ',           icon:'🍳'},
+      {key:'facades',   ar:'واجهات',          icon:'🏢'},
+      {key:'windows',   ar:'شبابيك',          icon:'⬜'},
+      {key:'doors',     ar:'أبواب',           icon:'🚪'},
+      {key:'curtain_wall',ar:'سيكوريت',       icon:'🪟'},
+      {key:'shower',    ar:'شاور',            icon:'🚿'},
+      {key:'screens',   ar:'شيش وبليسيه',     icon:'🔲'},
+      {key:'cladding',  ar:'كلادينج',         icon:'🏗️'},
+      {key:'pergola',   ar:'بيرجولا',         icon:'⛱️'},
+      {key:'railings',  ar:'درابزين',         icon:'🔩'},
+      {key:'sections',  ar:'قطاعات',          icon:'⚙️'}
+    ];
+
+    // حساب الأعداد
+    if (typeof DESIGN2027_DATA !== 'undefined') {
+      DESIGN2027_DATA.forEach(item => {
+        const cat = CATS.find(c => c.key === item.category);
+        if (cat) { cat.count = (cat.count||0) + 1; }
+      });
+      CATS[0].count = DESIGN2027_DATA.length;
+    }
+
+    const catMap = {};
+    CATS.forEach(c => catMap[c.key] = c);
+
+    let activeFilter = 'all', searchQuery = '', visibleCount = 48;
+    const PAGE_SIZE = 48;
+    let filteredData = [], lbIndex = 0;
+
+    const grid            = document.getElementById('cat27Grid');
+    const filtersEl       = document.getElementById('cat27Filters');
+    const searchInput     = document.getElementById('cat27Search');
+    const shownEl         = document.getElementById('cat27Shown');
+    const totalEl         = document.getElementById('cat27Total');
+    const loadMoreBtn     = document.getElementById('cat27LoadMoreBtn');
+    const loadMoreSection = document.getElementById('cat27LoadMoreSection');
+    const emptyEl         = document.getElementById('cat27Empty');
+    const progressText    = document.getElementById('cat27ProgressText');
+    const progFill        = document.getElementById('cat27ProgFill');
+    const activeLabel     = document.getElementById('cat27ActiveLabel');
+    const lb              = document.getElementById('cat27Lb');
+    const lbImg           = document.getElementById('cat27LbImg');
+    const lbTitle         = document.getElementById('cat27LbTitle');
+    const lbDesc          = document.getElementById('cat27LbDesc');
+    const lbCat           = document.getElementById('cat27LbCat');
+    const lbCounter       = document.getElementById('cat27LbCounter');
+    const lbClose         = document.getElementById('cat27LbClose');
+    const lbPrev          = document.getElementById('cat27LbPrev');
+    const lbNext          = document.getElementById('cat27LbNext');
+    const scrollTopBtn    = document.getElementById('scrollTopBtn');
+
+    if (!grid || typeof DESIGN2027_DATA === 'undefined') return;
+
+    // بناء الفلاتر
+    filtersEl.innerHTML = '<span class="flabel">القسم:</span>' +
+      CATS.map(c => `
+        <button type="button" class="cat27-chip ${c.key==='all'?'active':''}"
+                data-filter="${c.key}" aria-pressed="${c.key==='all'}">
+          ${c.key!=='all'?`<span>${c.icon}</span>`:''}
+          ${c.ar}
+          <span class="ccount">${c.count||0}</span>
+        </button>
+      `).join('');
+
+    filtersEl.querySelectorAll('.cat27-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.filter;
+        visibleCount = PAGE_SIZE;
+        searchInput.value = ''; searchQuery = '';
+        filtersEl.querySelectorAll('.cat27-chip').forEach(b => {
+          b.classList.toggle('active', b.dataset.filter === activeFilter);
+          b.setAttribute('aria-pressed', b.dataset.filter === activeFilter);
+        });
+        const ac = CATS.find(c => c.key === activeFilter);
+        if (activeLabel) activeLabel.textContent = activeFilter === 'all' ? 'جميع الأقسام' : ac?.ar || '';
+        applyAndRender();
+        setTimeout(() => grid.scrollIntoView({behavior:'smooth', block:'start'}), 120);
+      });
+    });
+
+    function applyAndRender() {
+      let data = activeFilter === 'all' ? [...DESIGN2027_DATA] : DESIGN2027_DATA.filter(i => i.category === activeFilter);
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        data = data.filter(i => i.title_ar.toLowerCase().includes(q) || i.desc_ar.toLowerCase().includes(q) || i.category.includes(q));
+      }
+      filteredData = data;
+      renderCards();
+    }
+
+    function renderCards() {
+      const toShow = filteredData.slice(0, visibleCount);
+      if (!toShow.length) {
+        grid.innerHTML = ''; emptyEl.classList.add('show');
+        loadMoreSection.style.display = 'none';
+        if(shownEl) shownEl.textContent = '0';
+        if(totalEl) totalEl.textContent = filteredData.length;
+        return;
+      }
+      emptyEl.classList.remove('show');
+      grid.innerHTML = toShow.map((item, idx) => {
+        const cat = catMap[item.category] || {ar: item.category, icon: '📷'};
+        return `
+          <article class="cat27-card" role="listitem"
+                   data-idx="${idx}" tabindex="0"
+                   aria-label="${item.title_ar}"
+                   style="animation-delay:${(idx%12)*0.035}s">
+            <div class="cat27-img-wrap">
+              <div class="cat27-skeleton"></div>
+              <img data-src="${item.image}"
+                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E"
+                   alt="${item.title_ar}" loading="lazy" width="400" height="300">
+              <div class="cat27-badge-2027">2027</div>
+              <div class="cat27-cat-badge">${cat.ar}</div>
+              <div class="cat27-overlay">
+                <span class="cat27-overlay-btn">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  عرض
+                </span>
+              </div>
+            </div>
+            <div class="cat27-info">
+              <h3>${item.title_ar}</h3>
+              <p>${item.desc_ar}</p>
+            </div>
+          </article>`;
+      }).join('');
+
+      // Lazy load
+      const imgs = grid.querySelectorAll('img[data-src]');
+      const obs = new IntersectionObserver((entries, o) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const img = e.target, skel = img.previousElementSibling;
+            img.src = img.dataset.src; img.removeAttribute('data-src');
+            img.onload  = () => { img.classList.add('loaded'); skel?.classList.add('gone'); };
+            img.onerror = () => { img.classList.add('loaded'); skel?.classList.add('gone'); };
+            o.unobserve(img);
+          }
+        });
+      }, {rootMargin:'200px 0px', threshold:0.01});
+      imgs.forEach(img => obs.observe(img));
+
+      // Scroll reveal
+      const revEls = document.querySelectorAll('.cat27-card');
+      const revObs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revObs.unobserve(e.target); }});
+      }, {threshold:0.06});
+      revEls.forEach(el => revObs.observe(el));
+
+      // Card click
+      grid.querySelectorAll('.cat27-card').forEach(card => {
+        card.addEventListener('click', () => openLb(parseInt(card.dataset.idx)));
+        card.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLb(parseInt(card.dataset.idx)); }});
+      });
+
+      const hasMore = filteredData.length > visibleCount;
+      loadMoreSection.style.display = hasMore ? 'block' : 'none';
+      if (loadMoreBtn) loadMoreBtn.disabled = false;
+      if (shownEl) shownEl.textContent = Math.min(visibleCount, filteredData.length);
+      if (totalEl) totalEl.textContent = filteredData.length;
+      const pct = filteredData.length > 0 ? Math.round((Math.min(visibleCount, filteredData.length) / filteredData.length)*100) : 0;
+      if (progressText) progressText.textContent = `عرض ${Math.min(visibleCount,filteredData.length)} من ${filteredData.length}`;
+      if (progFill) progFill.style.width = pct + '%';
+    }
+
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        visibleCount += PAGE_SIZE; loadMoreBtn.disabled = true;
+        loadMoreBtn.textContent = 'جاري التحميل...';
+        setTimeout(() => { renderCards(); loadMoreBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg> عرض المزيد من التصميمات'; }, 200);
+      });
+    }
+
+    let st;
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        clearTimeout(st);
+        st = setTimeout(() => { searchQuery = searchInput.value.trim(); visibleCount = PAGE_SIZE; applyAndRender(); }, 300);
+      });
+    }
+
+    // Lightbox
+    function openLb(idx) {
+      if (!lb || !filteredData.length) return;
+      lbIndex = Math.max(0, Math.min(idx, filteredData.length-1));
+      renderLb(); lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden'; lbClose?.focus();
+    }
+    function closeLb() { lb?.classList.remove('open'); lb?.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; }
+    function renderLb() {
+      const item = filteredData[lbIndex]; if (!item) return;
+      const cat = catMap[item.category] || {ar: item.category};
+      if(lbImg){lbImg.src=item.image; lbImg.alt=item.title_ar;}
+      if(lbTitle) lbTitle.textContent = item.title_ar;
+      if(lbDesc)  lbDesc.textContent  = item.desc_ar;
+      if(lbCat)   lbCat.textContent   = cat.ar;
+      if(lbCounter) lbCounter.textContent = `${lbIndex+1} / ${filteredData.length}`;
+    }
+    function lbNav(dir) { lbIndex=(lbIndex+dir+filteredData.length)%filteredData.length; renderLb(); }
+
+    if(lbClose) lbClose.addEventListener('click', closeLb);
+    if(lbPrev)  lbPrev.addEventListener('click', ()=>lbNav(-1));
+    if(lbNext)  lbNext.addEventListener('click', ()=>lbNav(1));
+    lb?.addEventListener('click', e=>{ if(e.target===lb) closeLb(); });
+    document.addEventListener('keydown', e=>{
+      if(!lb?.classList.contains('open')) return;
+      if(e.key==='Escape') closeLb();
+      if(e.key==='ArrowRight') lbNav(-1);
+      if(e.key==='ArrowLeft')  lbNav(1);
+    });
+    let tx=0;
+    lb?.addEventListener('touchstart', e=>{tx=e.changedTouches[0].screenX;},{passive:true});
+    lb?.addEventListener('touchend',   e=>{const d=tx-e.changedTouches[0].screenX; if(Math.abs(d)>50) lbNav(d>0?1:-1);},{passive:true});
+
+    // Scroll top
+    if(scrollTopBtn){
+      window.addEventListener('scroll',()=>{scrollTopBtn.classList.toggle('visible',window.scrollY>500);},{passive:true});
+      scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    }
+
+    // Header
+    const toggle=document.querySelector('.menu-toggle'), nav=document.querySelector('.main-nav');
+    if(toggle&&nav){
+      toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open);toggle.textContent=open?'✕':'☰';});
+      document.addEventListener('click',e=>{if(!toggle.contains(e.target)&&!nav.contains(e.target)){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}});
+    }
+    const header=document.querySelector('.site-header');
+    if(header) window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+
+    const floatBtn=document.querySelector('.floating-cta.whatsapp');
+    if(floatBtn){
+      floatBtn.addEventListener('click',()=>{window.open(`https://wa.me/${(floatBtn.dataset.phone||'').replace(/[^0-9]/g,'')}?text=${encodeURIComponent(floatBtn.dataset.message||'')}`, '_blank');});
+      let ly=0;
+      window.addEventListener('scroll',()=>{const cy=window.scrollY;floatBtn.classList.toggle('hidden',cy>ly&&cy>300);ly=cy;},{passive:true});
+    }
+
+    // Init
+    applyAndRender();
+  });
+  </script>
+</body>
+</html>

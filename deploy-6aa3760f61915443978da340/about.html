@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ae metall – من نحن | رواد الألومنيوم المعماري في مصر منذ 2012</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تعرف على ae metall – الشركة الرائدة في أنظمة الألومنيوم المعماري في مصر وأفريقيا منذ 2012. فريق محترف وخبرة 18+ سنة.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* About page styles */
+    .about-hero {
+      background: linear-gradient(135deg,#0a0f1e 0%,#1a1a2e 50%,#0f3460 100%);
+      padding: 90px 0 70px; text-align:center; position:relative; overflow:hidden;
+    }
+    .about-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 30% 60%,rgba(192,57,43,0.25) 0%,transparent 55%); }
+    .about-hero .container { position:relative; z-index:2; }
+    .about-hero-badge { display:inline-block; background:rgba(212,172,13,0.2); color:#d4ac0d; border:1px solid rgba(212,172,13,0.45); padding:6px 22px; border-radius:50px; font-size:0.82rem; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:18px; }
+    .about-hero h1 { font-size:clamp(2rem,4vw,3.2rem); font-weight:900; color:#fff; margin-bottom:16px; }
+    .about-hero p { color:rgba(255,255,255,0.72); font-size:clamp(0.95rem,1.6vw,1.1rem); max-width:600px; margin:0 auto; line-height:1.85; }
+
+    /* Intro */
+    .about-intro { padding:80px 0; background:#fff; }
+    .about-intro .two-col { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+    .about-intro-text .eyebrow { color:#c0392b; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; display:block; margin-bottom:10px; }
+    .about-intro-text h2 { font-size:clamp(1.7rem,2.8vw,2.4rem); font-weight:900; color:#1a1a2e; margin-bottom:18px; line-height:1.3; }
+    .about-intro-text p { color:#666; line-height:1.9; margin-bottom:16px; font-size:0.97rem; }
+    .about-img { border-radius:20px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.12); aspect-ratio:4/3; }
+    .about-img img { width:100%; height:100%; object-fit:cover; }
+
+    .signature-block {
+      margin-top: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 8px;
+    }
+    .signature-image {
+      width: min(260px, 60%);
+      max-width: 260px;
+      filter: drop-shadow(0 4px 16px rgba(26,26,46,0.18));
+      background: transparent;
+    }
+    .signature-caption {
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #7b7b7b;
+      margin-top: 8px;
+    }
+
+    /* Timeline */
+    .timeline-sec { padding:80px 0; background:#f9f7f5; }
+    .section-head { text-align:center; margin-bottom:52px; }
+    .section-head .eyebrow { color:#c0392b; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; display:block; margin-bottom:10px; }
+    .section-head h2 { font-size:clamp(1.7rem,3vw,2.5rem); font-weight:900; color:#1a1a2e; }
+    .timeline { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+    .timeline-item { background:#fff; border-radius:16px; padding:26px 20px; text-align:center; border:1px solid #eee; box-shadow:0 2px 10px rgba(0,0,0,0.05); transition:all 0.3s; }
+    .timeline-item:hover { transform:translateY(-6px); box-shadow:0 14px 34px rgba(192,57,43,0.12); border-color:#c0392b; }
+    .timeline-year { font-size:1.5rem; font-weight:900; color:#c0392b; margin-bottom:8px; }
+    .timeline-item h3 { font-size:0.95rem; font-weight:800; color:#1a1a2e; margin-bottom:6px; }
+    .timeline-item p { color:#888; font-size:0.82rem; line-height:1.6; }
+
+    /* Values */
+    .values-sec { padding:80px 0; background:#fff; }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .value-card { background:linear-gradient(160deg,#fff 0%,#faf7f5 100%); border:1px solid #eee; border-radius:18px; padding:30px 24px; transition:all 0.3s; }
+    .value-card:hover { transform:translateY(-6px); box-shadow:0 14px 36px rgba(192,57,43,0.12); border-color:#c0392b; }
+    .value-icon { width:56px; height:56px; border-radius:14px; background:rgba(192,57,43,0.1); display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:16px; }
+    .value-card h3 { font-size:1.05rem; font-weight:800; color:#1a1a2e; margin-bottom:10px; }
+    .value-card p { color:#777; font-size:0.88rem; line-height:1.75; }
+
+    /* Stats */
+    .about-stats { padding:70px 0; background:linear-gradient(135deg,#c0392b 0%,#922b21 100%); }
+    .about-stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .astat { text-align:center; padding:18px; }
+    .astat strong { display:block; font-size:clamp(2rem,3.5vw,2.8rem); font-weight:900; color:#fff; line-height:1; margin-bottom:6px; }
+    .astat span { font-size:0.82rem; color:rgba(255,255,255,0.8); font-weight:700; text-transform:uppercase; letter-spacing:0.8px; }
+
+    /* Team/Mission */
+    .mission-sec { padding:80px 0; background:#f9f7f5; }
+    .mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+    .mission-card { background:#fff; border-radius:18px; padding:32px 28px; border:1px solid #eee; }
+    .mission-card-icon { font-size:2.2rem; margin-bottom:14px; }
+    .mission-card h3 { font-size:1.2rem; font-weight:900; color:#1a1a2e; margin-bottom:12px; }
+    .mission-card p { color:#666; line-height:1.85; font-size:0.95rem; }
+
+    /* CTA */
+    .about-cta { padding:70px 0; background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%); text-align:center; position:relative; overflow:hidden; }
+    .about-cta::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%,rgba(192,57,43,0.35) 0%,transparent 60%); }
+    .about-cta .container { position:relative; z-index:1; }
+    .about-cta h2 { color:#fff; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:900; margin-bottom:12px; }
+    .about-cta p { color:rgba(255,255,255,0.7); margin-bottom:30px; }
+    .about-cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    @media(max-width:860px){
+      .about-intro .two-col { grid-template-columns:1fr; }
+      .about-img { display:none; }
+      .timeline { grid-template-columns:repeat(2,1fr); }
+      .values-grid { grid-template-columns:repeat(2,1fr); }
+      .about-stats-grid { grid-template-columns:repeat(2,1fr); }
+      .mission-grid { grid-template-columns:1fr; }
+    }
+    @media(max-width:520px){
+      .timeline { grid-template-columns:1fr; }
+      .values-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ae metall" width="46" height="46"><span>ae metall</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a class="active" href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">معرض الأعمال</a></li>
+          <li><a href="design2027.html" style="color:#d4ac0d;font-weight:800;">كتالوج 2027 ✦</a></li><li><a href="catalogue.html">الكتالوج الفني</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a class="lang-pill" href="about-en.html">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="main" class="about-hero">
+    <div class="container">
+      <div class="about-hero-badge">✦ منذ 2012 – 18+ سنة</div>
+      <h1>من نحن</h1>
+      <p>رواد أنظمة الألومنيوم المعماري في مصر — خبرة حقيقية، جودة موثوقة، وأكثر من 120 مشروع منجز.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="about-intro">
+    <div class="container">
+      <div class="two-col">
+        <div class="about-intro-text">
+          <span class="eyebrow">قصتنا</span>
+          <h2>نبني الجمال بالألومنيوم<br>منذ 2012</h2>
+          <p>تأسست شركة ae metall عام 2012 كإحدى الشركات الرائدة في مجال أنظمة الألومنيوم المعماري في مصر. بدأنا بالسوق المحلي وتوسعنا لنخدم مشاريع كبرى في كافة أنحاء مصر وأسواق أفريقية.</p>
+          <p>نتخصص في تصميم وتصنيع وتركيب واجهات الألومنيوم والزجاج، أنظمة السيكوريت، الكلادينج، الشبابيك والأبواب، كبائن الشاور، المطابخ الألومنيوم، البيرجولا والظلل، وجميع قطاعات الألومنيوم المعماري وإكسسواراتها.</p>
+          <p>نمتلك فريقاً متكاملاً من المهندسين والفنيين المدربين على أعلى مستوى، مع تقنيات حديثة في القياس والتصنيع والتركيب لضمان نتيجة مثالية في كل مشروع.</p>
+          <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="portfolio.html" class="btn btn-primary">شاهد أعمالنا</a>
+            <a href="contact.html" class="btn btn-secondary">تواصل معنا</a>
+          </div>
+
+        </div>
+        <div class="about-img">
+          <img src="assets/images/portfolio/aluminium-facade-02.jpg" alt="أعمال ae metall المعمارية" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">مسيرتنا</span>
+        <h2>محطات النجاح</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item scroll-reveal"><div class="timeline-year">2012</div><h3>التأسيس</h3><p>تأسيس ae metall في السوق المصري وبداية تنفيذ المشاريع السكنية الأولى.</p></div>
+        <div class="timeline-item scroll-reveal"><div class="timeline-year">2015</div><h3>التوسع</h3><p>دخول مشاريع الكمبوندات الكبرى وتنفيذ مشاريع ضخمة في الشيخ زايد و6 أكتوبر.</p></div>
+        <div class="timeline-item scroll-reveal"><div class="timeline-year">2018</div><h3>التنوع</h3><p>توسيع نطاق الخدمات ليشمل الكلادينج والسيكوريت والبيرجولا والمشاريع الصناعية.</p></div>
+        <div class="timeline-item scroll-reveal"><div class="timeline-year">2025</div><h3>الريادة</h3><p>120+ مشروع منجز، معرض أعمال بأكثر من 1000 صورة واقعية، وفريق متكامل.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="about-stats">
+    <div class="container">
+      <div class="about-stats-grid">
+        <div class="astat scroll-reveal"><strong>120+</strong><span>مشروع منجز</span></div>
+        <div class="astat scroll-reveal"><strong>18+</strong><span>سنة خبرة</span></div>
+        <div class="astat scroll-reveal"><strong>12</strong><span>قطاع متخصص</span></div>
+        <div class="astat scroll-reveal"><strong>1014+</strong><span>صورة في المعرض</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">قيمنا</span>
+        <h2>ما يجعلنا مختلفين</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card scroll-reveal"><div class="value-icon">🏆</div><h3>الاحترافية</h3><p>نتعامل مع كل مشروع باحترافية كاملة من رفع المقاسات حتى التسليم النهائي مع متابعة ما بعد البيع.</p></div>
+        <div class="value-card scroll-reveal"><div class="value-icon">💎</div><h3>الجودة</h3><p>نستخدم أفضل الخامات من ألومنيوم 6063-T5 وزجاج Low-E وتشطيبات PVDF المقاومة للعوامل الجوية.</p></div>
+        <div class="value-card scroll-reveal"><div class="value-icon">🤝</div><h3>الشراكة</h3><p>نبني علاقات طويلة الأمد مع عملائنا، فكل مشروع هو بداية شراكة وليس مجرد صفقة.</p></div>
+        <div class="value-card scroll-reveal"><div class="value-icon">💡</div><h3>الابتكار</h3><p>نواكب أحدث أنظمة الألومنيوم المعماري عالمياً ونطبق أحدث التقنيات في مشاريعنا.</p></div>
+        <div class="value-card scroll-reveal"><div class="value-icon">⏰</div><h3>الالتزام</h3><p>نحترم مواعيد التسليم والميزانية المتفق عليها ونتواصل بشفافية في كل مرحلة من المشروع.</p></div>
+        <div class="value-card scroll-reveal"><div class="value-icon">🛡️</div><h3>الأمانة</h3><p>تعامل صادق وشفاف في الأسعار والمواصفات والمواعيد — هذا هو أساس ثقة عملائنا منذ 2012.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">رسالتنا ورؤيتنا</span>
+        <h2>نهدف للريادة</h2>
+      </div>
+      <div class="mission-grid">
+        <div class="mission-card scroll-reveal">
+          <div class="mission-card-icon">🎯</div>
+          <h3>رسالتنا</h3>
+          <p>تقديم حلول ألومنيوم معمارية متكاملة بأعلى معايير الجودة والاحترافية، وتلبية احتياجات عملائنا وتحقيق طموحاتهم مع الالتزام بالصدق والشفافية في جميع التعاملات. تطوير قدرات فريقنا باستمرار وتحمل المسؤولية الاجتماعية لخدمة وطننا.</p>
+        </div>
+        <div class="mission-card scroll-reveal">
+          <div class="mission-card-icon">🚀</div>
+          <h3>رؤيتنا</h3>
+          <p>أن نكون الشريك الأول والمرجع الموثوق لحلول الألومنيوم المعماري في مصر وأفريقيا، عبر الابتكار المستمر والاستدامة وتقديم أفضل تجربة لعملائنا. نطمح لبناء مستقبل معماري أجمل وأكثر كفاءةً في استهلاك الطاقة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <div class="container">
+      <h2>هل أنت جاهز لبدء مشروعك؟</h2>
+      <p>تواصل معنا الآن للحصول على استشارة مجانية وعرض سعر تفصيلي</p>
+      <div class="about-cta-btns">
+        <a href="contact.html" class="btn btn-primary">اطلب استشارة مجانية</a>
+        <a href="portfolio.html" class="btn btn-outline">شاهد معرض الأعمال</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="founder-signature" aria-label="توقيع المؤسس">
+    <div class="container">
+      <p>مع خالص التقدير</p>
+      <img class="signature-image" src="assets/images/signature.png" alt="توقيع أحمد القوا" loading="eager" decoding="async">
+      <div class="signature-caption">Ahmed Elkwaa</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand"><img src="assets/images/logo.png" alt="ae metall" width="40" height="40"><span>ae metall</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li><li><a href="services.html">الخدمات</a></li>
+        <li><a href="portfolio.html">المعرض</a></li><li><a href="privacy.html">الخصوصية</a></li>
+      </ul>
+      <div class="footer-contact">
+        <a href="https://wa.me/+201001382022" class="contact-item"><img src="assets/images/whatsapp-icon.svg" alt="واتساب" class="contact-icon"><span class="contact-text">واتساب</span></a>
+        <a href="mailto:ahmedelkwaae@gmail.com" class="contact-item"><img src="assets/images/email-icon.svg" alt="البريد" class="contact-icon"><span class="contact-text">البريد</span></a>
+        <a href="https://www.facebook.com/aeMETALL.eg" target="_blank" rel="noopener" class="contact-item"><img src="assets/images/facebook-icon.svg" alt="فيسبوك" class="contact-icon"><span class="contact-text">فيسبوك</span></a>
+      </div>
+      <p class="copy">© 2025 ae metall. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <button class="floating-cta whatsapp" data-phone="+201001382022" data-message="مرحباً، أود الاستفسار عن خدماتكم" aria-label="واتساب"></button>
+  <script src="assets/script.js"></script>
+</body>
+</html>
